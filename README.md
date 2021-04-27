@@ -1,10 +1,13 @@
 # temp-humidity-sensor
 Project that contains source, stl file, and info for a BME280 temperature humidity sensor controlled by an Adafruit Feather HUZZAH with ESP8266 for use in an environment such as a greenhouse.
 
+## code
+The temp-humidity-sensor.ino file is amalgamation of a few different examples that I found online.
+
 ## secrets
 The temp-humidity-sensor.ino file imports a secrets.h file that is not included in the project for obvious reasons. This file contains the ssid, ssid password, aws iot enpoint, and certificates.
 
-Here is the format of the certificates that I got to work. The example is the publicly available AWS Root CA so no problem using it as an example.
+Here is the format of the certificates that I got to work. The example is the publicly available AWS Root CA so no problem using it as an example. I created the file manually but if you're using the Arduino Web IDE you can probably enter it as one long string without all the quoted and backslashes.
 
 ```
 
@@ -28,3 +31,12 @@ Here is the format of the certificates that I got to work. The example is the pu
 "rqXRfboQnoZsG4q5WTP468SQvvG5"
 
 ```
+
+** build
+I went through quite a few iterations to get the project box to build right. One of the issues I ran into is that the diagram that Adafruit provides for the Feather HUZZAH with ESP8266 is that the screw hole measurements on the diagram did not match the feather that I ordered. Not sure if it's a fluke or if they're just not manufactured to spec. Make sure to double check your feather screw hole measurements agains the measurements on the Fusion 360 files included in the project.
+
+I used knurled inserts for M2 screws that I found at (https://www.amazon.com/gp/product/B01IZ157KS/ref=ppx_yo_dt_b_asin_title_o09_s01?ie=UTF8&psc=1)
+
+For the battery pack I used the battery I found at (https://www.amazon.com/gp/product/B08FD39Y5R/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
+
+The BME280 I used was also from Amazon found at (https://www.amazon.com/gp/product/B01N47LZ4P/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
