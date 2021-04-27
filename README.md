@@ -35,8 +35,13 @@ Here is the format of the certificates that I got to work. The example is the pu
 ## build
 I went through quite a few iterations to get the project box to build right. One of the issues I ran into is that the diagram that Adafruit provides for the Feather HUZZAH with ESP8266 is that the screw hole measurements on the diagram did not match the feather that I ordered. Not sure if it's a fluke or if they're just not manufactured to spec. Make sure to double check your feather screw hole measurements agains the measurements on the Fusion 360 files included in the project.
 
+I'm using silicone to fill the wire hole to the BME280 sensor. This should keep the sensor open to the elements while protecting the controller.
+
 I used knurled inserts for M2 screws that I found at (https://www.amazon.com/gp/product/B01IZ157KS/ref=ppx_yo_dt_b_asin_title_o09_s01?ie=UTF8&psc=1)
 
 For the battery pack I used the battery I found at (https://www.amazon.com/gp/product/B08FD39Y5R/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 
 The BME280 I used was also from Amazon found at (https://www.amazon.com/gp/product/B01N47LZ4P/ref=ppx_yo_dt_b_asin_title_o05_s00?ie=UTF8&psc=1)
+
+## Future
+I plan on adding a solar panel and running power to the board to charge the battery via the usb port that is left open
