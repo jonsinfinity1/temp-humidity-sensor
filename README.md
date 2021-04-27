@@ -4,9 +4,9 @@ Project that contains source, stl file, and info for a BME280 temperature humidi
 ## secrets
 The temp-humidity-sensor.ino file imports a secrets.h file that is not included in the project for obvious reasons. This file contains the ssid, ssid password, aws iot enpoint, and certificates.
 
-Here is the format of the certificates that I got to work. The example is the publicly available AWS Root CA so no problem using it as an example. 
+Here is the format of the certificates that I got to work. The example is the publicly available AWS Root CA so no problem using it as an example.
 
-...
+```
 
 #define SECRET_CA_CERT "MIIDQTCCAimgAwIBAgITBmyfz5m/jAo54vB4ikPmljZbyjANBgkqhkiG9w0BAQsF" \
 "ADA5MQswCQYDVQQGEwJVUzEPMA0GA1UEChMGQW1hem9uMRkwFwYDVQQDExBBbWF6" \
@@ -27,4 +27,4 @@ Here is the format of the certificates that I got to work. The example is the pu
 "5MsI+yMRQ+hDKXJioaldXgjUkK642M4UwtBV8ob2xJNDd2ZhwLnoQdeXeGADbkpy" \
 "rqXRfboQnoZsG4q5WTP468SQvvG5"
 
-...
+```
